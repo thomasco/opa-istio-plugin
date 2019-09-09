@@ -20,7 +20,6 @@ import (
 	ext_core "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	ext_authz "github.com/envoyproxy/go-control-plane/envoy/service/auth/v2"
 	ext_type "github.com/envoyproxy/go-control-plane/envoy/type"
-	google_rpc "github.com/gogo/googleapis/google/rpc"
 	"github.com/open-policy-agent/opa/ast"
 	"github.com/open-policy-agent/opa/metrics"
 	"github.com/open-policy-agent/opa/plugins"
@@ -31,6 +30,7 @@ import (
 	"github.com/open-policy-agent/opa/util"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
+	google_rpc "google.golang.org/genproto/googleapis/rpc/status"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )

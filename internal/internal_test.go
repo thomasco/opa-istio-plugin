@@ -14,13 +14,13 @@ import (
 
 	ext_core "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"
 	ext_authz "github.com/envoyproxy/go-control-plane/envoy/service/auth/v2"
-	google_rpc "github.com/gogo/googleapis/google/rpc"
 	"github.com/open-policy-agent/opa/ast"
 	"github.com/open-policy-agent/opa/plugins"
 	"github.com/open-policy-agent/opa/plugins/logs"
 	"github.com/open-policy-agent/opa/storage"
 	"github.com/open-policy-agent/opa/storage/inmem"
 	"github.com/open-policy-agent/opa/util"
+	google_rpc "google.golang.org/genproto/googleapis/rpc/status"
 )
 
 const exampleAllowedRequest = `{
